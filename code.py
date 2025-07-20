@@ -1,3 +1,9 @@
+import discord
+from discord.ext import commands, tasks
+from collections import defaultdict
+import asyncio
+import os
+
 TOKEN = os.environ['DISCORD_TOKEN']
 TARGET_CHANNEL_ID = 1270301984897110148  # 1389210900489044048
 DELAY_SECONDS = 5
