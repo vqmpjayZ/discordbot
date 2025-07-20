@@ -5,7 +5,7 @@ import asyncio
 import os
 
 TOKEN = os.environ['DISCORD_TOKEN']
-TARGET_CHANNEL_ID = 1389210900489044048  # 1389210900489044048 <> 1270301984897110148
+TARGET_CHANNEL_ID = 1270301984897110148 # 1389210900489044048 <> 1270301984897110148
 DELAY_SECONDS = 3
 
 intents = discord.Intents.default()
@@ -33,7 +33,7 @@ async def on_message(message):
         return
 
     if message.channel.id == TARGET_CHANNEL_ID:
-        if "just Boosted the server!" in message.content.lower():
+        if "just boosted the server!" in message.content.lower():
             user_id = message.author.id
 
             recent_boosts[user_id] = True
